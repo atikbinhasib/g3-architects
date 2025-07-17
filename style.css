@@ -1,0 +1,202 @@
+/* Work sans Google Font  */
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* #CUSTOM PROPERTY */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a { text-decoration: none; }
+li { list-style: none; }
+img, button { display: block; }
+a, span { display: inline-block; }
+button{ border: none;}
+
+:root{
+    --primary: #FF900E;
+    --White: #ffffff;
+    --Dark-01: #131313;
+    --Dark-02: #424242;
+    --Dark-03: #727272;
+
+}
+
+/* Common style / shared style  */
+.display-flex{
+    display: flex;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.center{
+    margin: 0 auto;
+}
+.btn{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--White);
+    background-color: var(--primary);
+    border-radius: 8px;
+    padding: 20px 25px;
+}
+.btn:hover{
+    transform: scale(1.1, 1.1);
+    transition-duration: 0.5s;
+}
+
+
+/* Header area design  */
+.header{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+.nav-links{
+    gap: 40px;
+}
+.brand{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--Dark-01);
+}
+.nav-link{
+    font-size: 1.125rem;
+    font-weight:500;
+    line-height: 1.625rem;
+    color: var(--Dark-02);
+}
+.menu-icon{
+    display: none;
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.banner-content{
+    max-width: 862px;
+    margin: 0 auto;
+    padding: 100px 0 30px 0;
+}
+.banner-heading{
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--Dark-01);
+    text-align: center;
+}
+.banner-pera{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    color: var(--Dark-03);
+    text-align: center;
+    padding: 20px 0;
+}
+.banner-image img{
+    width: 100%;
+    border-radius: 8px;
+    padding-bottom: 40px;
+}
+
+/* Quick list of Our Features  */
+.our-features img{
+    width: 100%;
+}
+.our-features{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 100px 0;
+}
+.feature-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.features-disc{
+    max-width: 537px;
+    margin-left: 70px;
+}
+.first{
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: var(--Dark-03);
+}
+.socend{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--Dark-01);
+}
+.third{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+.features-disc-pera{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    color: var(--Dark-03);
+    padding: 30px 0;
+}
+
+
+
+
+/* Responsive area 575px */
+@media screen and (max-width:575px){
+    /* Header area design  */
+    .nav-links{
+    display: none;
+   }
+   .menu-icon{
+    display: flex;
+   }
+
+   /* Quick list of Our Features  */
+
+   .our-features{
+    grid-template-columns: 1fr;
+    padding: 80px 0;
+    gap: 80px;
+    }
+    .features-disc{
+    margin-left: 0;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:991px){
+    /* Header area design  */
+   .nav-links{
+    display: none;
+   }
+   .menu-icon{
+    display: flex;
+   }
+
+/* Quick list of Our Features  */
+
+   .our-features{
+    grid-template-columns: 1fr;
+    padding: 80px 0;
+    gap: 80px;
+    }
+    .features-disc{
+    margin-left: 0;
+    }
+}
+
+
+
