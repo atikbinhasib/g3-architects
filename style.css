@@ -39,8 +39,11 @@ button{ border: none;}
     margin: 0 auto;
     padding: 0 20px;
 }
-.center{
+.btn-center{
     margin: 0 auto;
+}
+.text-center{
+    text-align: center;
 }
 .btn{
     font-size: 1.25rem;
@@ -49,6 +52,8 @@ button{ border: none;}
     background-color: var(--primary);
     border-radius: 8px;
     padding: 20px 25px;
+    transition-duration: 0.5s;
+
 }
 .btn:hover{
     transform: scale(1.1, 1.1);
@@ -153,21 +158,182 @@ button{ border: none;}
 }
 
 
+/* Features you will love & enjoy  */
+.features-two{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-top: 30px;
+}
+.features-left{
+    margin-right: 120px;
+}
+.features-left-heading{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--Dark-01);
+    border-left: 5px solid var(--primary);
+    padding-left: 10px;
+}
+.features-box{
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    padding: 30px 36px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition-duration: 0.5s;
+
+}
+.features-box:hover{
+    box-shadow: 0px 0px 10px rgba(249, 175, 3, 0.307);
+    transform: scale(1.05, 1.05);
+    transition-duration: 0.5s;
+}
+.features-box-heading{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--Dark-03);
+}
+.features-box-prea{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    color: var(--Dark-03);
+    padding: 10px 0;
+}
+.features-right img{
+    width: 100%;
+}
+.features-right-box{
+    max-width: 342px;
+    background-color: var(--primary);
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    margin: -80px 0 0 -80px;
+    position: relative;
+    transition: 0.5s;
+}
+.features-right-box:hover{
+    transform: rotate(10deg);
+    transition: 0.5s;
+}
+.features-right-box h5{
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.4rem;
+    color: var(--White);
+}
+.features-right-box p{
+    font-size: 1.56rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    color: var(--White);
+}
+
+/* Some Fact design  */
+.fact{
+    margin: 120px 0;
+}
+.fact-discription{
+    max-width: 543px;
+
+}
+.fact-discription h5, .sponspors-heading{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--Dark-01);
+}
+.fact-discription p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    color: var(--Dark-03);
+    padding: 10px 0;
+}
+.all-fact-boxs{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    gap: 10px;
+}
+.fact-box{
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 30px;
+    width: 240px;
+    transition-duration: 0.5s;
+
+}
+.fact-box:hover{
+    transform: scale(1.1, 1.1);
+    transition-duration: 0.5s;
+}
+.fact-box-heading{
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: var(--Dark-02);
+    padding: 5px 0;
+}
+.fact-pera{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--Dark-03);
+    text-align: center;
+}
+
+/* Our Sponspors  */
+.sponspors{
+    margin: 120px 0;
+}
+.sponspors-disc{
+    max-width: 543px;
+    margin: 0 auto;
+}
+.sponspors-heading{
+    margin-bottom: 24px;
+}
+.sponspors-img{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+/* Footer section  */
+.footer{
+    background-color: rgba(255, 144, 14, 0.1);
+    padding: 40px 0;
+    border-radius: 8px;
+    margin-bottom: 100px;
+}
+.footer p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--Dark-02);
+}
+
+
+
+
 
 
 /* Responsive area 575px */
 @media screen and (max-width:575px){
-    /* Header area design  */
+
+/* Header area design  */
     .nav-links{
     display: none;
-   }
-   .menu-icon{
+    }
+    .menu-icon{
     display: flex;
-   }
+     }
 
-   /* Quick list of Our Features  */
-
-   .our-features{
+/* Quick list of Our Features  */
+    .our-features{
     grid-template-columns: 1fr;
     padding: 80px 0;
     gap: 80px;
@@ -175,28 +341,85 @@ button{ border: none;}
     .features-disc{
     margin-left: 0;
     }
+
+/* Features you will love & enjoy  */
+    .features-two{
+        grid-template-columns: 1fr;
+        gap: 50px;
+        margin-top: 30px;
+    }
+    .features-left{
+        margin-right: 0;
+    }
+    .features-right-box{
+        margin: -170px 0 0 0px;
+    }
+
+/* Some Fact design  */
+    .all-fact-boxs{
+        flex-direction: column;
+    }
+    .fact-box{
+        width: 100%;
+    }
+
+    /* Our Sponspors  */
+    .sponspors-img{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sponspors-img img{
+    max-width: 220px;
+}
 }
 
 @media screen and (min-width:576px) and (max-width:991px){
-    /* Header area design  */
-   .nav-links{
+
+/* Header area design  */
+    .nav-links{
     display: none;
-   }
-   .menu-icon{
+    }
+    .menu-icon{
     display: flex;
-   }
+    }
 
 /* Quick list of Our Features  */
-
-   .our-features{
-    grid-template-columns: 1fr;
-    padding: 80px 0;
-    gap: 80px;
+    .our-features{
+        grid-template-columns: 1fr;
+        padding: 80px 0;
+        gap: 80px;
     }
     .features-disc{
     margin-left: 0;
     }
+
+/* Features you will love & enjoy  */
+    .features-two{
+        grid-template-columns: 1fr;
+        gap: 50px;
+        margin-top: 30px;
+    }
+    .features-left{
+        margin-right: 0;
+    }
+    .features-right-box{
+        margin: -170px 0 0 0px;
+    }
+
+/* Some Fact design  */
+    .all-fact-boxs{
+        flex-wrap: wrap;
+    }
+
+    /* Our Sponspors  */
+    .sponspors-img{
+        flex-wrap: wrap;
+    }
+    
+
 }
+
+
 
 
 
